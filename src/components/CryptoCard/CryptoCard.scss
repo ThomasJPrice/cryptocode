@@ -1,0 +1,84 @@
+.crypto-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    background: var(--black);
+    border: 4px solid #383F3E;
+    border-radius: 60px;
+    padding: 100px 0;
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 0;
+    }
+}
+
+.crypto-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crypto-card-image {
+    display: flex;
+    position: relative;
+    padding: 33px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 768px) {
+        transform: scale(0.8);
+        margin-bottom: 0;
+    }
+}
+
+.crypto-card-image-circle {
+    position: absolute;
+    background: linear-gradient(90deg, #3FE8AB 0%, #78CDCD 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.crypto-card-crypto {
+    color: var(--white);
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 58px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+.crypto-card-price {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    background: var(--aqua-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 62px;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+.crypto-card-button {
+    padding: 22px 54px;
+}

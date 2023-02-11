@@ -1,0 +1,137 @@
+.footer-copyright {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copyright-text {
+    padding: 31px 0;
+    text-align: center;
+}
+
+.footer-copyright-text a {
+    color: #F6F6F6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-divider {
+    background: #383F3E;
+    border-radius: 14px;
+    height: 2px;
+    width: 100vw;
+    width: 100dvw;
+    position: absolute;
+    top: 0;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+
+    flex-wrap: wrap;
+    row-gap: 50px;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.footer-info {
+    max-width: 400px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    padding-top: 18px;
+    display: flex;
+    column-gap: 150px;
+    align-items: flex-start;
+    row-gap: 100px;
+
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.footer-links-main {
+    display: flex;
+    column-gap: 150px;
+    row-gap: 50px;
+
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.footer-link-title {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+    color: #F7F7F7;
+}
+
+.footer-links-list {
+    list-style: none;
+}
+
+.footer-link {
+    margin-bottom: 16px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.footer-link a {
+    color: #B8B8B8;
+}
+
+.social-link-list {
+    display: flex;
+    list-style: none;
+
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    width: 46px;
+    height: 46px;
+}
+
+.social-link a {
+    height: 46px;
+
+    background-color: var(--black);
+    border: 2px solid #383F3E;
+    border-radius: 10px;
+    transition: all 300ms ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        .social-link-img {
+            filter: invert(1);
+        }
+    }
+}

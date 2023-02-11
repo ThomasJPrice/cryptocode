@@ -1,0 +1,50 @@
+.about-wrapper {
+    padding-bottom: 200px;
+}
+
+.about-container {
+    display: flex;
+    gap: 136px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.about-reverse {
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.about-img {
+    width: 50%;
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-title {
+    margin-bottom: 30px;
+}
+
+.about-para {
+    margin-bottom: 50px;
+}
+
+.about-button {
+    padding: 22px 54px;
+}
